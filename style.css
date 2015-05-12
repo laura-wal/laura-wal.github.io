@@ -1,0 +1,9 @@
+    body {
+      background: blue;
+    }
+    .grid td {
+      background: #FFFFFF;
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+    }
