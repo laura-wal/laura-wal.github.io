@@ -1,10 +1,31 @@
     body {
       background: blue;
     }
-    .grid td {
-      background: #FFFFFF;
+/*    .grid td {
+      background: white;
       width: 100px;
       height: 100px;
       border: 1px solid black;
-      
+    }*/
+
+.box {
+      background: white;
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+
     }
+
+.cross {
+  background-image: url('http://www.hailhailmedia.com/wp-content/uploads/2014/09/x.png');
+  width: 100px;
+  height: 100px;
+  background-size:contain;
+}
+
+.circle  {
+ background-image: url('http://f.tqn.com/y/altreligion/1/S/_/1/-/-/circle.jpg');
+ width: 100px;
+  height: 100px;
+  background-size:contain;
+}

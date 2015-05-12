@@ -1,51 +1,38 @@
 $(document).ready(function() {
   console.log('readytoroll');
 
-    // var x = 1
-    // var o = 2
+     var player1 = true
+     var player2 = false
     // // var player1 = 
     // // var player2 = 
-
+    // currentplayer = 
+    
     // var row 1 = [1, 2, 3]
     // var row 2 = [4 ,5 ,6]
     // var row 3 = [7, 8, 9]
 
+//who is playing ?
+
+// var turn = function(){
+//   if player1
+// }
+
 //click function for the different table posistions
-  $('#square1').on('click', function(){
-   return console.log("hello1");
+    $('.box').on('click', function(){
+     console.log("hello1", player1, player2);
+     if (player1) {
+        $(this).addClass('cross');
+        player1 = false;
+        player2 = true;
+      } else { 
+        $(this).addClass('circle');
+        player1 = true;
+        player2 = false;
+      }
     });
 
-  $('#square2').on('click', function(){
-   return console.log("hello2");
-    });
 
-  $('#square3').on('click', function(){
-   return console.log("hello3");
-    });
-
-  $('#square4').on('click', function(){
-   return console.log("hello4");
-    });
-
-  $('#square5').on('click', function(){
-   return console.log("hello5");
-    });
-
-  $('#square6').on('click', function(){
-   return console.log("hello6");
-    });
-
-  $('#square7').on('click', function(){
-   return console.log("hello7");
-    });
-
-  $('#square8').on('click', function(){
-   return console.log("hello8");
-    });
-
-  $('#square9').on('click', function(){
-   return console.log("hello9");
-    });
+ 
 
 
 });
