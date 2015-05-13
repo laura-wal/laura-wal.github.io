@@ -1,17 +1,23 @@
     body {
       background: blue;
     }
-/*    .grid td {
-      background: white;
-      width: 100px;
-      height: 100px;
-      border: 1px solid black;
-    }*/
+
+table {
+  display: inline;
+  margin-right: 30%;
+  float: right;
+  margin-top: 6%;
+}
+
+tbody {
+  width: 600px;
+  height: 600px;
+}
 
 .box {
       background: white;
-      width: 100px;
-      height: 100px;
+      width: 160px;
+      height: 160px;
       border: 1px solid black;
 
     }

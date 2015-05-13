@@ -18,7 +18,8 @@ $(document).ready(function() {
     $.each(winningCombo, function(index, win_array){ 
       if(board[win_array[0]] == board[win_array[1]] && board[win_array[1]] ==  board[win_array[2]] && board[win_array[0]] !== '') { 
         console.log('I am being run!');
-        $('div.result').text('You have won!');
+        //$('div.result').text('You have won!');
+        $('.box').unbind('click');
         console.log('win')
       } else {
         console.log('draw')
