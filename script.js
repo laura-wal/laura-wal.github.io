@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+  //actual game jquery
+
   
   var player1 = true;
   var player2 = false;
@@ -45,4 +48,8 @@ $(document).ready(function() {
         checkForWin();
       }
     });
-  });
+
+
+
+
+});
