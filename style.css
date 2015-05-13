@@ -21,6 +21,7 @@
   width: 100px;
   height: 100px;
   background-size:contain;
+  pointer-events: none;
 }
 
 .circle  {
@@ -28,4 +29,9 @@
  width: 100px;
   height: 100px;
   background-size:contain;
+  pointer-events: none;
+}
+
+.result {
+  font-size: 50px;
 }
