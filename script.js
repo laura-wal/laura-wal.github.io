@@ -76,40 +76,56 @@ $(document).ready(function() {
   });
 
 //fucntion that adds the tic tac toe letters in
-setInterval(function(){
-  $('#t0').css('backgroundColor', '#85FFBA').text('T').addClass('letters');
-  }, 900)
+setTimeout(function(){
+  $('#t0').css('backgroundColor', '#85FFBA').text('T').addClass('letters'); console.log('stillgoing')
+  }, 700)
   
-  $('#t1').on('click', function(){
-    $(this).css('backgroundColor', 'blue').text('I').addClass('letters');
-  })
+  setTimeout(function(){
+  $('#t1').css('backgroundColor', 'blue').text('I').addClass('letters');
+  }, 900)
 
-  $('#t2').on('click', function(){
-    $(this).css('backgroundColor', '#85FFBA').text('C').addClass('letters');
-  })
+  setTimeout(function(){
+  $('#t2').css('backgroundColor', '#85FFBA').text('C').addClass('letters');
+  }, 1100)
 
-  $('#t3').on('click', function(){
-    $(this).css('backgroundColor', 'blue').text('T').addClass('letters');
-  })
+  setTimeout(function(){
+  $('#t3').css('backgroundColor', 'blue').text('T').addClass('letters');
+  }, 1300)
 
-  $('#t4').on('click', function(){
-    $(this).css('backgroundColor', '#85FFBA').text('A').addClass('letters');
-  })
+  setTimeout(function(){
+  $('#t4').css('backgroundColor', '#85FFBA').text('A').addClass('letters');
+  }, 1500)
 
-  $('#t5').on('click', function(){
-    $(this).css('backgroundColor', 'blue').text('C').addClass('letters');
-  })
+  setTimeout(function(){
+  $('#t5').css('backgroundColor', 'blue').text('C').addClass('letters');
+  }, 1700)
 
-  $('#t6').on('click', function(){
-    $(this).css('backgroundColor', '#85FFBA').text('T').addClass('letters');
-  })
 
-  $('#t7').on('click', function(){
-    $(this).css('backgroundColor', 'blue').text('O').addClass('letters');
-  })
+  setTimeout(function(){
+  $('#t6').css('backgroundColor', '#85FFBA').text('T').addClass('letters');
+  }, 1900)
 
-  $('#t8').on('click', function(){
-    $(this).css('backgroundColor', '#85FFBA').text('E').addClass('letters');
+  setTimeout(function(){
+  $('#t7').css('backgroundColor', 'blue').text('O').addClass('letters');
+  }, 2100)
+
+  setTimeout(function(){
+  $('#t8').css('backgroundColor', '#85FFBA').text('E').addClass('letters');
+  }, 2300)
+
+
+  //reset button
+  $('.buttonReset').on('click', function() {
+  var player1 = true;
+  var player2 = false;
+  board = ["", "", "", "", "", "", "", "", ""];
+  var buttonArray = $('.box');
+    $.each(buttonArray, function(index, value){
+      if (value.children[0]) {
+        value.children[0].remove();
+        console.log(stop);
+      }
   })
+})
 
 }); //END DOM READY

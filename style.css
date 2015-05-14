@@ -107,3 +107,8 @@ td {
   font-weight: bold;
   background-color: #DAA520;
 }
+
+.tableScale {
+  .grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(0.3); }
+}
