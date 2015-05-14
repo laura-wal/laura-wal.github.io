@@ -1,3 +1,4 @@
+
     body {
       background: silver;
     }
@@ -40,23 +41,31 @@ table {
     }
 
 .cross {
-  background-image: url('http://www.hailhailmedia.com/wp-content/uploads/2014/09/x.png');
-  width: 160px;
-  height: 160px;
-  background-size:contain;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 70px;
+  color: black;
   pointer-events: none;
 }
 
 .circle  {
- background-image: url('http://f.tqn.com/y/altreligion/1/S/_/1/-/-/circle.jpg');
- width: 100px;
-  height: 100px;
-  background-size:  contain;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 70px;
+  color: black;
   pointer-events: none;
 }
 
 .result {
   font-size: 50px;
-]
+}
+
+.letters {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 70px;
+  color: black;
+}
+
 
 

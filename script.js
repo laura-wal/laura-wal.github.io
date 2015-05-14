@@ -22,8 +22,9 @@ $(document).ready(function() {
       if(board[win_array[0]] == board[win_array[1]] && board[win_array[1]] ==  board[win_array[2]] && board[win_array[0]] !== '') { 
         console.log('I am being run!');
         //$('div.result').text('You have won!');
-        $('.box').unbind('click');
+        $('.box').off('click');
         console.log('win')
+        $('t0', 't1', 't3', 't6').addClass('animate');
       } else {
         console.log('draw')
       }
@@ -34,14 +35,14 @@ $(document).ready(function() {
   $('.box').on('click', function(){
    //  console.log("hello1", player1, player2);
     if (player1) { 
-      $(this).addClass('cross');
+      $(this).text('X').addClass('cross');
         player1 = false;
         player2 = true;
         var cell = $(this).attr('id')
         board[$(this).attr('id')]="x";
         checkForWin(cell);
     } else { 
-        $(this).addClass('circle'); 
+        $(this).text('O').addClass('circle'); 
         player1 = true;
         player2 = false;
         board[$(this).attr('id')]="o";
@@ -49,6 +50,43 @@ $(document).ready(function() {
       }
     });
 
+//fucntion that adds the tic tac toe letters in
+
+$('#t0').on('click', function(){
+  $(this).css('backgroundColor', 'red').text('T').addClass('letters');
+})
+
+$('#t1').on('click', function(){
+  $(this).css('backgroundColor', 'blue').text('I').addClass('letters');
+})
+
+$('#t2').on('click', function(){
+  $(this).css('backgroundColor', 'yellow').text('C').addClass('letters');
+})
+
+$('#t3').on('click', function(){
+  $(this).css('backgroundColor', 'lime').text('T').addClass('letters');
+})
+
+$('#t4').on('click', function(){
+  $(this).css('backgroundColor', 'aqua').text('A').addClass('letters');
+})
+
+$('#t5').on('click', function(){
+  $(this).css('backgroundColor', 'teal').text('C').addClass('letters');
+})
+
+$('#t6').on('click', function(){
+  $(this).css('backgroundColor', 'lightblue').text('T').addClass('letters');
+})
+
+$('#t7').on('click', function(){
+  $(this).css('backgroundColor', 'violet').text('O').addClass('letters');
+})
+
+$('#t8').on('click', function(){
+  $(this).css('backgroundColor', 'orange').text('E').addClass('letters');
+})
 
 
 
