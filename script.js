@@ -1,3 +1,6 @@
+  // board = ["", "", "", "", "", "", "", "", ""];
+
+
 $(document).ready(function() {
 
   //actual game jquery
@@ -58,7 +61,7 @@ $(document).ready(function() {
 
 //click function for the different table posistions dependant on the player
   $('.box').on('click', function(){
-   //  console.log("hello1", player1, player2);
+    // console.log("hello1", player1, player2);
     if (player1) { 
       $(this).text('X').addClass('cross');
         player1 = false;
@@ -116,16 +119,18 @@ setTimeout(function(){
 
   //reset button
   $('.buttonReset').on('click', function() {
-  var player1 = true;
-  var player2 = false;
+    //console.log('im here')
+   player1 = true;
+   player2 = false;
   board = ["", "", "", "", "", "", "", "", ""];
-  var buttonArray = $('.box');
-    $.each(buttonArray, function(index, value){
-      if (value.children[0]) {
-        value.children[0].remove();
-        console.log(stop);
-      }
-  })
+   var buttonArray = $('.box');
+   // debugger;
+     buttonArray.text('');
+     buttonArray.removeClass('circle');
+     buttonArray.removeClass('cross');
+
 })
+
+
 
 }); //END DOM READY
